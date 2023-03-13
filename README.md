@@ -1,6 +1,3 @@
-## Repository
-[Template](https://github.com/caramellateam/NESTJS_BP.git)
-
 ## DATABASE
 
 [PRISMA INTEGRATION](https://www.prisma.io/docs/guides)
