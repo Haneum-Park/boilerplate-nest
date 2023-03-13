@@ -1,0 +1,50 @@
+app:
+  host: localhost
+  corsOrigin:
+    - '*'
+  port: 3000
+  https: false
+
+rate-limit:
+  # TYPE: ttl 단위 (초)
+  ttl: 10
+  # TYPE: ttl 당 제한
+  limit: 1
+
+
+jwt:
+  access_token:
+    secret_or_private_key: asdfasdf
+    sign_option:
+      algorithm: HS512
+      expires_in: 1d
+      audience: ql.gl
+  refresh_token:
+    secret_or_private_key: asdfasdf
+    sign_option:
+      algorithm: HS512
+      expires_in: 1d
+      audience: ql.gl
+
+log:
+  level: debug
+  capture_request: true
+  # NOTE : 요청에 대한 디버깅?
+  capture_response: true
+  # NOTE : 응답에 대한 디버깅 ?
+
+  cloudwatch:
+    enabled: false
+    name: 
+    log_group: 
+    stream_name: 
+    access_key: 
+    secret_key: 
+    log_level: debug
+
+db:
+  host: 
+  username: 
+  password: 
+  port: 
+  schema:   
